@@ -586,6 +586,7 @@ button {
     box-shadow: 0 0 5px #13BBFF;
     color: #333;
     font-size: 18px;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
