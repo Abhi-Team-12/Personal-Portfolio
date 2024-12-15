@@ -114,7 +114,8 @@ span {
         gap: 50px;
 
     }
-    .navbar h1{
+
+    .navbar h1 {
         display: flex;
         font-size: 30px;
         gap: 5px;
@@ -366,7 +367,7 @@ span {
         margin: 0 50px;
     }
 
-    .details h1{
+    .details h1 {
         font-size: 45px;
     }
 }
@@ -621,10 +622,29 @@ button {
     width: 100%;
     background-color: #444;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
     color: #fff;
+}
+
+.footer .copyright {
+    font-size: 18px;
+    color: gold;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .scroll-up {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.footer i {
+    color: black;
 }
 
 /* Footer Section End */
