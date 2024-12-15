@@ -19,6 +19,9 @@ body {
 body {
     overflow-x: hidden !important;
 }
+main{
+    width: 100%;
+}
 
 .con p {
     height: 60px;
