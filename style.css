@@ -114,6 +114,7 @@ span {
         gap: 50px;
 
     }
+
     .navbar .nav {
         display: none;
         flex-direction: column;
@@ -123,7 +124,7 @@ span {
         right: 20px;
         width: 200px;
         border-radius: 5px;
-       
+
     }
 
     .navbar .nav.active {
@@ -131,7 +132,7 @@ span {
         padding: 50px;
         gap: 50px;
     }
-    
+
 
     .navbar .toggle {
         display: block;
@@ -255,6 +256,24 @@ span {
         padding-left: 0px;
     }
 
+    .text .social {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .text h1 {
+        font-size: 45px;
+    }
+
+    .btn {
+        gap: 15px;
+    }
+
+    .btn a {
+        font-size: 15px;
+    }
+
 }
 
 /* Home Section End */
@@ -342,6 +361,9 @@ span {
         margin: 0 50px;
     }
 
+    .details h1{
+        font-size: 45px;
+    }
 }
 
 /* About Section End */
