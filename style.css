@@ -15,9 +15,11 @@ body {
     position: relative;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
+
 .con p {
     height: 60px;
     width: 60px;
@@ -64,43 +66,72 @@ body{
     background: #333;
     position: fixed;
     z-index: 99;
-}
+  }
 
-span {
-    color: #13BBFF;
+  span {
+    color: #13bbff;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
+  }
 
-.navbar .nav {
+  .navbar .nav {
     display: flex;
     gap: 40px;
-}
+  }
 
-.navbar a {
+  .navbar a {
     text-decoration: none;
-}
+  }
 
-.navbar .contact-me {
+  .navbar .contact-me {
     padding: 5px 20px;
-    border: 2px solid #13BBFF;
+    border: 2px solid #13bbff;
     border-radius: 10px;
-}
+  }
+
+  .navbar .toggle {
+    display: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .navbar .nav {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      width: 200px;
+      border-radius: 5px;
+    }
+
+    .navbar .nav.active {
+      display: flex;
+    }
+
+    .navbar .toggle {
+      display: block;
+    }
+  }
 
 /* Header Section End */
 /* Home Section Start */
 
 .home {
-    padding-top: 80px;
+    /* padding-top: 80px; */
     height: auto;
     width: 100%;
     display: flex;
-    padding-left: 120px;
+    padding:80px 120px 0 120px ;
+    gap: 50px;
     background-color: #333;
 }
 
 .text {
     height: 100%;
-    width: 45%;
+    width: 50%;
     padding-top: 50px;
     line-height: 1.6;
     /* background-color: white; */
@@ -164,19 +195,45 @@ span {
     background-color: #13BBFF;
     color: #333;
 }
-.btn .cv:hover{
+
+.btn .cv:hover {
     background-color: #13BBFF;
     color: #333;
 }
+
 .image {
     height: 100%;
-    width: 55%;
-    padding-left: 120px;
+    width: 50%;
 }
 
 .image img {
     height: 100%;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        gap: 50px;
+        height: auto;
+
+    }
+
+    .text {
+        width: 100%;
+        height: auto;
+        margin: 0 50px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        margin: 0 50px;
+        padding-left: 0px;
+    }
+
 }
 
 /* Home Section End */
@@ -242,6 +299,30 @@ span {
     color: #333;
 }
 
+
+@media (max-width: 768px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        gap: 50px;
+        height: auto;
+    }
+
+    .about-img {
+        width: 100%;
+        height: auto;
+        margin: 0 50px;
+    }
+
+    .details {
+        width: 100%;
+        height: auto;
+        margin: 0 50px;
+    }
+
+}
+
 /* About Section End */
 /* Skills Section Start */
 .skills {
@@ -249,7 +330,8 @@ span {
     width: 100%;
     background-color: #333;
 }
-.skills h1{
+
+.skills h1 {
     padding-top: 80px;
     font-size: 50px;
     text-align: center;
@@ -294,13 +376,14 @@ span {
 
 /* Skills Section End */
 /* project Section Start */
-.pro{
+.pro {
     height: auto;
     width: 100%;
     background-color: #444;
     padding-bottom: 30px;
 }
-.pro h1{
+
+.pro h1 {
     padding-top: 80px;
     font-size: 50px;
     text-align: center;
@@ -354,9 +437,10 @@ span {
     gap: 20px
 }
 
-.project-text h3{
+.project-text h3 {
     font-size: 60px;
 }
+
 .project-text h2 {
     font-size: 45px;
 }
@@ -365,10 +449,33 @@ span {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .project {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        gap: 20px;
+        height: auto;
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+        margin: 0 50px;
+    }
+
+    .project-text {
+        width: 100%;
+        height: auto;
+        margin: 0 50px;
+    }
+
+}
+
 /* project Section End */
 /* Contact Section Start */
-.contact{
-    height: 100vh;  
+.contact {
+    height: 100vh;
     width: 100%;
     background-color: #333;
     display: flex;
@@ -376,12 +483,14 @@ span {
     align-items: center;
     flex-direction: column;
 }
-.contact h1{
+
+.contact h1 {
     padding-top: 80px;
     font-size: 50px;
     text-align: center;
 }
-form{
+
+form {
     width: 100%;
     height: 80%;
     display: flex;
@@ -390,7 +499,8 @@ form{
     flex-direction: column;
     gap: 20px;
 }
-input{
+
+input {
     width: 35%;
     height: 8vh;
     background-color: #444;
@@ -400,7 +510,8 @@ input{
     padding-left: 10px;
     font-size: 18px;
 }
-textarea{
+
+textarea {
     width: 35%;
     height: 20vh;
     background-color: #444;
@@ -412,11 +523,12 @@ textarea{
     font-size: 18px;
 }
 
-.contact div{
+.contact div {
     height: 10vh;
     width: 35%;
 }
-button{
+
+button {
     height: 6vh;
     width: 30%;
     background-color: #13BBFF;
@@ -426,9 +538,37 @@ button{
     color: #333;
     font-size: 18px;
 }
+
+@media (max-width: 768px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding:50px;
+        gap: 20px;
+        height: auto;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    .contact div {
+        width: 90%;
+    }
+
+    button {
+        width: 50%;
+    }
+
+}
+
 /* Contact Section End */
 /* Footer Section Start */
-.footer{
+.footer {
     height: 10vh;
     width: 100%;
     background-color: #444;
@@ -438,4 +578,5 @@ button{
     gap: 20px;
     color: #fff;
 }
+
 /* Footer Section End */
