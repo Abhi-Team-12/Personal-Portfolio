@@ -20,15 +20,18 @@ body {
     overflow-x: hidden !important;
 }
 
-section{
+section {
     width: 100%;
 }
-header{
+
+header {
     width: 100%;
 }
-footer{
+
+footer {
     width: 100%;
 }
+
 .con p {
     height: 60px;
     width: 60px;
@@ -105,6 +108,12 @@ span {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        padding: 50px;
+        gap: 50px;
+
+    }
     .navbar .nav {
         display: none;
         flex-direction: column;
@@ -114,11 +123,15 @@ span {
         right: 20px;
         width: 200px;
         border-radius: 5px;
+       
     }
 
     .navbar .nav.active {
         display: flex;
+        padding: 50px;
+        gap: 50px;
     }
+    
 
     .navbar .toggle {
         display: block;
@@ -222,24 +235,23 @@ span {
 
 @media (max-width: 768px) {
     .home {
+        height: auto;
         display: flex;
         flex-direction: column;
-        padding: 50px;
+        padding: 80px 50px 0 50px;
         gap: 50px;
-        height: auto;
-
     }
 
     .text {
         width: 100%;
         height: auto;
-        margin: 0 50px;
+        /* margin: 0 50px; */
     }
 
     .image {
         width: 100%;
         height: auto;
-        margin: 0 50px;
+        /* margin: 0 50px; */
         padding-left: 0px;
     }
 
