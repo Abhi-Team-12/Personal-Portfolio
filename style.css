@@ -114,6 +114,11 @@ span {
         gap: 50px;
 
     }
+    .navbar h1{
+        display: flex;
+        font-size: 30px;
+        gap: 5px;
+    }
 
     .navbar .nav {
         display: none;
