@@ -626,6 +626,7 @@ button {
     align-items: center;
     gap: 20px;
     color: #fff;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .footer .copyright {
